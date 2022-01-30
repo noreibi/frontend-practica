@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronted-pavoreal</title>
+</head>
+<style>
+    body {
+        background-color: #FCFFA6;
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .objetos {
+        max-width: 966px;
+        width: 966px;
+        font-size: 48px;
+        margin-bottom: 0px;
+        position: relative;
+        animation: mymove 3s;
+        animation-iteration-count: 2;
+    }
+
+    .obj1 {
+        position: absolute;
+        z-index: 1;
+        top: 54px;
+        left: 40px;
+        background-color: #C1FFD7;
+        width: 200px;
+        height: 200px;
+        margin-left: 48%;
+        border-radius: 50px 200px 0px 200px;
+        transform: rotate(78deg);
+    }
+
+    @keyframes mymove {
+        from {
+            top: 0px;
+        }
+
+        to {
+            top: 200px;
+        }
+    }
+
+    .obj2 {
+        background-color: #CAB8FF;
+        position: absolute;
+        top: 108px;
+        left: 20px;
+        z-index: 4;
+        border-radius: 50px 200px 0px 200px;
+        margin-left: 56.9%;
+        width: 200px;
+        height: 200px;
+        transform: rotate(100deg);
+    }
+
+
+    .obj3 {
+        position: absolute;
+        z-index: 6;
+        top: 220px;
+        left: 0px;
+        background-color: #F38BA0;
+        width: 200px;
+        height: 200px;
+        margin-left: 22.6%;
+        border-radius: 50px 200px 0px 200px;
+        transform: rotate(-40deg);
+    }
+
+    .obj4 {
+        position: absolute;
+        top: 52px;
+        left: 20px;
+        z-index: 1;
+        background-color: #C1FFD7;
+        border-radius: 50px 200px 0px 200px;
+        margin-left: 26%;
+        width: 200px;
+        height: 200px;
+        transform: rotate(15deg);
+    }
+
+
+    .obj5 {
+        background-color: #CAB8FF;
+        position: absolute;
+        top: 108px;
+        left: 20px;
+        z-index: 1;
+        border-radius: 50px 200px 0px 200px;
+        margin-left: 20.5%;
+        width: 200px;
+        height: 200px;
+        transform: rotate(-10deg);
+    }
+
+    .obj6 {
+        position: absolute;
+        z-index: 6;
+        top: 220px;
+        left: 0px;
+        background-color: #F38BA0;
+        width: 200px;
+        height: 200px;
+        margin-left: 59%;
+        border-radius: 50px 200px 0px 200px;
+        transform: rotate(130deg);
+    }
+
+    .ojo {
+        z-index: 7;
+        background-color: white;
+        position: absolute;
+        top: 96px;
+        left: 13%;
+        border-radius: 50px 50px 50px 50px;
+        margin-left: 37%;
+        width: 10px;
+        height: 10px;
+    }
+
+    .pluma {}
+
+    .plu1 {
+        transform: rotate(-25deg);
+        position: absolute;
+        left: 48%;
+        top: 55px;
+        width: 12.5px;
+        height: 40px;
+        border-radius: 150% 30% 50% 50%;
+        background-color: #F38BA0;
+        z-index: 5;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .plu2 {
+        transform: rotate(-50deg);
+        position: absolute;
+        left: 46.6%;
+        top: 66px;
+        width: 12.5px;
+        height: 40px;
+        border-radius: 150% 30% 50% 50%;
+        z-index: 5;
+        background-color: blue;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .plu3 {
+        transform: rotate(-70deg);
+        position: absolute;
+        left: 45.8%;
+        top: 85px;
+        width: 12.5px;
+        height: 40px;
+        border-radius: 150% 30% 50% 50%;
+        z-index: 5;
+        background-color: #6ECB63;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .pavo {
+        position: relative;
+
+
+    }
+
+    .cabeza {
+        z-index: 6;
+        background-color: #5c2fe3;
+        position: relative;
+        top: 88px;
+        left: 20px;
+        border-radius: 50px 0px 0px 50px;
+        margin-left: 46.2%;
+        width: 52px;
+        height: 50px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .paralelogramo {
+        width: 44px;
+        position: relative;
+        z-index: 6;
+        top: 80px;
+        border-top: solid transparent 0px;
+        border-left: solid transparent 48px;
+        border-right: solid transparent 48px;
+        border-bottom: solid #5c2fe3 100px;
+        margin-left: 43.9%;
+
+    }
+
+    .cuerpo {
+
+        background-color: #5c2fe3;
+        position: relative;
+        top: 80px;
+        left: 20px;
+        z-index: 6;
+        border-radius: 0px 0px 50% 50%;
+        margin-left: 41.8%;
+        width: 140px;
+        height: 140px;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .circulo {
+
+        background-color: #B5DEFF;
+        width: 250px;
+        height: 360px;
+        border-radius: 50% 50% 50% 50%;
+        position: absolute;
+        padding: 0px;
+        margin: 0;
+        left: 370px;
+        right: 0px;
+        top: 15px;
+        bottom: 0px;
+
+    }
+
+    .circleA {
+        transform: rotate(50deg);
+        width: 100px;
+        height: 70px;
+        background-color: #6ECB63;
+        border-radius: 50%;
+        margin: 28px;
+        margin-left: 4px;
+    }
+
+    .circleB {
+
+        transform: rotate(37deg);
+        width: 100px;
+        height: 70px;
+        background-color: #6ECB63;
+        border-radius: 50%;
+        margin: 20px;
+
+    }
+
+    .circleC {
+
+        transform: rotate(90deg);
+        width: 100px;
+        height: 70px;
+        background-color: #6ECB63;
+        border-radius: 50%;
+        margin: 20px;
+        margin-left: 29%;
+    }
+
+    .circle2 {
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        border-radius: 50%;
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div class="objetos">
+
+        <div class="obj1">
+            <div class="circleA">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="obj2">
+            <div class="circleA">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="obj3">
+            <div class="circleB">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="obj4">
+            <div class="circleB">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="obj5">
+            <div class="circleB">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="obj6">
+            <div class="circleA">
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <div class="pavo">
+            <div class="ojo"></div>
+            <div class="pluma">
+                <div class="plu1"></div>
+                <div class="plu2"></div>
+                <div class="plu3"></div>
+            </div>
+            <div class="cabeza"></div>
+            <div class="paralelogramo"></div>
+            <div class="cuerpo"></div>
+        </div>
+
+        <div class="circulo">
+            <div class="circleC">
+                <div class="circle2"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
