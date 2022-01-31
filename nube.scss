@@ -1,0 +1,151 @@
+body {
+        background-color: #FCFFA6;
+
+        div {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        } 
+
+        .nube {
+            max-width: 966px;
+            width: 966px;
+            font-size: 48px;
+            margin-bottom: 0px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            /*animation: movimiento1 10s infinite;*/
+        
+        
+            .obj{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: #B5DEFF;
+            }
+
+            .obj1 {
+                z-index: 1;
+                top: 114px;
+                left: 40px;
+                margin-left: 60%;
+                border-radius: 100px 100px 100px 0px;
+                
+            }
+        
+            .obj2 {
+                z-index: 1;
+                top: 114px;
+                left: 0px;
+                margin-left: 15%;
+                border-radius: 100px 100px 0px 100px;
+               
+            }
+        
+            .obj3 {  
+                top: 52px;
+                left: 20px;
+                z-index: 1;
+                border-radius: 100px 100px 100px 0px;
+                margin-left: 52%;
+            }
+        
+        
+            .obj4 {
+                top: 52px;
+                left: 20px;
+                z-index: 1;
+                border-radius: 100px 100px 0px 100px;
+                margin-left: 25%;
+            }
+        
+        
+            .circulo{
+
+                background-color: #B5DEFF;
+                width: 280px;
+                height: 314px;
+                border-radius: 50% 50% 0px 0px;
+                position: absolute;
+                padding: 0px;
+                margin: 0;
+                left: 344px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                z-index: 1;
+            }
+        }
+
+        .nube1.shadow, .nube2.shadow, .nube3.shadow {
+            .obj1, .obj2, .obj3, .obj4, .circulo{
+                background-color: rgba(91, 91, 91, 0.5);
+                filter: blur(10px);
+            }
+            &.circulo{
+                width: 275px;
+            }
+        }
+        .nube1 {
+            z-index: 1;
+            margin-top: 0px;
+            animation: movimiento1 10s infinite;
+            &.shadow{
+                margin-top: 40px;
+            }
+        }
+        .nube2 {
+            z-index: 3;
+            margin-top: -5px;
+            animation: movimiento2 50s infinite;
+            &.shadow{
+                margin-top: 40px;
+            }
+        }
+        .nube3 {
+            z-index: 6;
+            margin-top: -5px;
+            animation: movimiento3 30s infinite;
+            &.shadow{
+                margin-top: 80px;
+            }
+        }
+    }
+
+
+
+
+    
+
+    @keyframes movimiento1 {
+        from {
+            margin-left: 100%;
+        }
+
+        to {
+            margin-left: -70%;
+        }
+    }
+
+
+
+    @keyframes movimiento2 {
+        from {
+            margin-left: -70%;
+        }
+
+        to {
+            margin-left: 100%;
+        }
+    }
+
+    @keyframes movimiento3 {
+        from {
+            margin-left: 120%;
+        }
+
+        to {
+            margin-left: -80%;
+        }
+    }

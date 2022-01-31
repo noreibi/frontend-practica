@@ -1,0 +1,177 @@
+body {
+  background-color: #FCFFA6;
+}
+
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .nube {
+  max-width: 966px;
+  width: 966px;
+  font-size: 48px;
+  margin-bottom: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /*animation: movimiento1 10s infinite;*/
+}
+
+body .nube .obj {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #B5DEFF;
+}
+
+body .nube .obj1 {
+  z-index: 1;
+  top: 114px;
+  left: 40px;
+  margin-left: 60%;
+  border-radius: 100px 100px 100px 0px;
+}
+
+body .nube .obj2 {
+  z-index: 1;
+  top: 114px;
+  left: 0px;
+  margin-left: 15%;
+  border-radius: 100px 100px 0px 100px;
+}
+
+body .nube .obj3 {
+  top: 52px;
+  left: 20px;
+  z-index: 1;
+  border-radius: 100px 100px 100px 0px;
+  margin-left: 52%;
+}
+
+body .nube .obj4 {
+  top: 52px;
+  left: 20px;
+  z-index: 1;
+  border-radius: 100px 100px 0px 100px;
+  margin-left: 25%;
+}
+
+body .nube .circulo {
+  background-color: #B5DEFF;
+  width: 280px;
+  height: 314px;
+  border-radius: 50% 50% 0px 0px;
+  position: absolute;
+  padding: 0px;
+  margin: 0;
+  left: 344px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+body .nube1.shadow .obj1, body .nube1.shadow .obj2, body .nube1.shadow .obj3, body .nube1.shadow .obj4, body .nube1.shadow .circulo, body .nube2.shadow .obj1, body .nube2.shadow .obj2, body .nube2.shadow .obj3, body .nube2.shadow .obj4, body .nube2.shadow .circulo, body .nube3.shadow .obj1, body .nube3.shadow .obj2, body .nube3.shadow .obj3, body .nube3.shadow .obj4, body .nube3.shadow .circulo {
+  background-color: rgba(91, 91, 91, 0.5);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+body .nube1.shadow.circulo, body .nube2.shadow.circulo, body .nube3.shadow.circulo {
+  width: 275px;
+}
+
+body .nube1 {
+  z-index: 1;
+  margin-top: 0px;
+  -webkit-animation: movimiento1 10s infinite;
+          animation: movimiento1 10s infinite;
+}
+
+body .nube1.shadow {
+  margin-top: 40px;
+}
+
+body .nube2 {
+  z-index: 3;
+  margin-top: -5px;
+  -webkit-animation: movimiento2 50s infinite;
+          animation: movimiento2 50s infinite;
+}
+
+body .nube2.shadow {
+  margin-top: 40px;
+}
+
+body .nube3 {
+  z-index: 6;
+  margin-top: -5px;
+  -webkit-animation: movimiento3 30s infinite;
+          animation: movimiento3 30s infinite;
+}
+
+body .nube3.shadow {
+  margin-top: 80px;
+}
+
+@-webkit-keyframes movimiento1 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: -70%;
+  }
+}
+
+@keyframes movimiento1 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: -70%;
+  }
+}
+
+@-webkit-keyframes movimiento2 {
+  from {
+    margin-left: -70%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes movimiento2 {
+  from {
+    margin-left: -70%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@-webkit-keyframes movimiento3 {
+  from {
+    margin-left: 120%;
+  }
+  to {
+    margin-left: -80%;
+  }
+}
+
+@keyframes movimiento3 {
+  from {
+    margin-left: 120%;
+  }
+  to {
+    margin-left: -80%;
+  }
+}
+/*# sourceMappingURL=nube.css.map */
