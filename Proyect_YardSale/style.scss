@@ -1,0 +1,78 @@
+body {
+  //background-color: red;
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+
+  nav {
+    background-color: darksalmon;
+    display: flex;
+    div.icon {
+    }
+    ul {
+      width: 100%;
+      li {
+        a {
+        }
+      }
+    }
+    div.icon2 {
+      width: 60px;
+      height: 35px;
+      background-color: blue;
+      margin-right: 10px;
+    }
+    div.icon3 {
+      width: 35px;
+      height: 35px;
+      background-color: blue;
+    }
+  }
+  main.container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    section.search_products {
+      display: flex;
+      div {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    section.filter_products {
+      display: flex;
+      margin-right: 10px;
+      div {
+      }
+    }
+    section.Grillas_products {
+      display: flex;
+      background-color: bisque;
+      justify-content: center;
+      div.card-product {
+        width: 250px;
+        height: 350px;
+        background-color: blue;
+        margin-right: 10px;
+        overflow: hidden;
+        border-radius: 20px;
+        img {
+          width: 250px;
+          height: 250px;
+          border-radius: 20px;
+        }
+        p {
+        }
+        span {
+        }
+        button {
+        }
+      }
+    }
+  }
+}
