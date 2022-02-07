@@ -23,9 +23,12 @@ body {
       }
     }
     section.Grillas_products {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
+      flex-wrap: wrap;
       background-color: rgb(213, 210, 209);
-      justify-content: center;
+      justify-content: left;
       div.card-product {
         width: 250px;
         height: 300px;
