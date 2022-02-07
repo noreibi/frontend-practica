@@ -45,13 +45,17 @@ body main.container section.filter_products {
 }
 
 body main.container section.Grillas_products {
+  max-width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #d5d2d1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 body main.container section.Grillas_products div.card-product {
