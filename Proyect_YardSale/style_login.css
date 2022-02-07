@@ -1,0 +1,36 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  /* comentario */
+}
+
+body {
+  margin: 0;
+}
+
+body .container-login {
+  background-color: #f7c380;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body .container-login .form-login form {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=style_login.css.map */

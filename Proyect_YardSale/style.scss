@@ -1,43 +1,15 @@
-body {
-  //background-color: red;
-  --background-main: white;
-  --button-color: #acd9b2;
-  --disabled-element: #c7c7c7;
-  --input-color: #f7f7f7;
-  --general-text-color: #232830;
-  --black-text-color: #000000;
+@import "var";
 
-  nav {
-    background-color: darksalmon;
-    display: flex;
-    div.icon {
-    }
-    ul {
-      width: 100%;
-      li {
-        a {
-        }
-      }
-    }
-    div.icon2 {
-      width: 60px;
-      height: 35px;
-      background-color: blue;
-      margin-right: 10px;
-    }
-    div.icon3 {
-      width: 35px;
-      height: 35px;
-      background-color: blue;
-    }
-  }
+body {
   main.container {
-    background-color: aquamarine;
+    //background-color: aquamarine;
     display: flex;
     flex-direction: column;
     section.search_products {
       display: flex;
       div {
+        width: 200px;
+        height: 30px;
         img {
           width: 25px;
           height: 25px;
@@ -52,25 +24,46 @@ body {
     }
     section.Grillas_products {
       display: flex;
-      background-color: bisque;
+      background-color: rgb(213, 210, 209);
       justify-content: center;
       div.card-product {
         width: 250px;
-        height: 350px;
-        background-color: blue;
+        height: 300px;
+        //background-color: blue;
         margin-right: 10px;
         overflow: hidden;
         border-radius: 20px;
+        div.card-product-footer {
+          display: flex;
+          justify-content: space-between;
+          div.card-product-price {
+            p {
+              font-family: Roboto;
+              font-weight: var(--fonts-wheigth-bold);
+            }
+
+            span {
+              margin-top: 0px;
+            }
+          }
+          button {
+            display: inline;
+            background-color: var(--button-color);
+            border-radius: 50px;
+            border: none;
+            width: 60px;
+            height: 60px;
+            img {
+              width: 40px;
+              height: 40px;
+              cursor: pointer;
+            }
+          }
+        }
         img {
           width: 250px;
-          height: 250px;
+          height: 210px;
           border-radius: 20px;
-        }
-        p {
-        }
-        span {
-        }
-        button {
         }
       }
     }

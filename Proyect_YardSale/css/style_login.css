@@ -1,0 +1,21 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  /* comentario */
+}
+
+body .container-login {
+  background-color: antiquewhite;
+}
+
+body .container-login .form-login form {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=style_login.css.map */
