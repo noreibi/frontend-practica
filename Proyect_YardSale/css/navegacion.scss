@@ -3,7 +3,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  box-shadow: 0px 5px 2.5px 0px rgba(205, 202, 202, 0.75);
+  -webkit-box-shadow: 0px 5px 2.5px 0px rgba(205, 202, 202, 0.75);
+  -moz-box-shadow: 0px 5px 2.5px 0px rgba(205, 202, 202, 0.75);
   div.logo {
     div.icon {
       img {
