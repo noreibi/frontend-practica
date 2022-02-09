@@ -26,6 +26,7 @@
       }
       div {
         label.label {
+          font-weight: var(--fonts-wheigth-bold);
         }
         p.value {
           color: var(--disabled-element);

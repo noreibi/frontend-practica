@@ -42,6 +42,10 @@
   }
 }
 
+.container-login .form-login form div label.label {
+  font-weight: var(--fonts-wheigth-bold);
+}
+
 .container-login .form-login form div p.value {
   color: var(--disabled-element);
   font-size: var(--md);
