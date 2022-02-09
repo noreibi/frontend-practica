@@ -1,0 +1,45 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  /* comentario */
+}
+
+@media (max-width: 640px) {
+  .container-login .form-login img.logo {
+    display: block;
+  }
+}
+
+.container-login .form-login h1.title2 {
+  background-color: red;
+  font-family: var(--fonts);
+  font-size: var(--lg);
+  margin-bottom: 22px;
+}
+
+.container-login .form-login form .input-name,
+.container-login .form-login form .input-email,
+.container-login .form-login form .input-password {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 640px) {
+  .primary-button {
+    width: 300px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 24px;
+    top: 65px;
+  }
+}
+/*# sourceMappingURL=account.css.map */

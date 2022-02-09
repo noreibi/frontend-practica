@@ -14,6 +14,11 @@
   /* comentario */
 }
 
+.container-login .form-login form .input-email,
+.container-login .form-login form .input-password {
+  margin-bottom: 22px;
+}
+
 .container-login .form-login form a {
   color: var(--button-color);
   font-size: var(--sm);

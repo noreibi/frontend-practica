@@ -8,7 +8,9 @@
       label {
       }
 
-      input {
+      .input-email,
+      .input-password {
+        margin-bottom: 22px;
       }
     }
     form a {
