@@ -1,0 +1,24 @@
+@import "var";
+
+.container-login {
+  .form-login {
+    img {
+    }
+    form {
+      label {
+      }
+
+      input {
+      }
+    }
+    form a {
+      color: var(--button-color);
+      font-size: var(--sm);
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 52px;
+    }
+  }
+  button {
+  }
+}
