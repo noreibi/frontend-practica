@@ -5,7 +5,8 @@
     img {
     }
     form {
-      label {
+      label.label {
+        font-weight: var(--fonts-wheigth-bold);
       }
 
       .input-email,
