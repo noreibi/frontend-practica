@@ -1,0 +1,36 @@
+@import "var";
+
+.container-login {
+  .form-login {
+    img {
+    }
+    h1 {
+    }
+    p {
+    }
+    div.email {
+      background-color: var(--input-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 160px;
+      height: 160px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      margin-top: 6px;
+      margin-bottom: 38px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    p {
+      a {
+        color: var(--button-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
