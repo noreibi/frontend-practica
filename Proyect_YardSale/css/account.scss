@@ -1,6 +1,9 @@
 @import "var";
 .container-login {
   .form-login {
+    @media (max-width: 640px) {
+      /*height: 100%;*/
+    }
     img.logo {
     }
     @media (max-width: 640px) {
@@ -9,14 +12,17 @@
       }
     }
     h1.title2 {
-      background-color: red;
       font-family: var(--fonts);
       font-size: var(--lg);
       margin-bottom: 22px;
-      //justify-content: start;
+      justify-self: start;
+      align-self: flex-start;
     }
 
     form {
+      @media (max-width: 640px) {
+        height: 100%;
+      }
       label.label {
       }
       .input-name,
@@ -24,6 +30,10 @@
       .input-password {
         margin-bottom: 22px;
       }
+    }
+    form div {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

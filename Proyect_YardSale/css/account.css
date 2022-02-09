@@ -15,22 +15,47 @@
 }
 
 @media (max-width: 640px) {
+  .container-login .form-login {
+    /*height: 100%;*/
+  }
+}
+
+@media (max-width: 640px) {
   .container-login .form-login img.logo {
     display: block;
   }
 }
 
 .container-login .form-login h1.title2 {
-  background-color: red;
   font-family: var(--fonts);
   font-size: var(--lg);
   margin-bottom: 22px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+  .container-login .form-login form {
+    height: 100%;
+  }
 }
 
 .container-login .form-login form .input-name,
 .container-login .form-login form .input-email,
 .container-login .form-login form .input-password {
   margin-bottom: 22px;
+}
+
+.container-login .form-login form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 640px) {
