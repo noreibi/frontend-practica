@@ -1,5 +1,6 @@
 nav {
   //background-color: darksalmon;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,37 +15,62 @@ nav {
       }
     }
   }
-  ul {
-    width: 100%;
-    list-style: none;
+  .menu-inicial {
+    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: left;
-
-    li {
-      a {
-        margin-right: 25px;
-        text-decoration: none;
-        font-family: var(--fonts);
-        font-weight: var(--fonts-wheigth-bold);
-        color: var(--disabled-element);
+    ul {
+      width: 100%;
+      list-style: none;
+      li {
+        a {
+          margin-right: 25px;
+          text-decoration: none;
+          font-family: var(--fonts);
+          font-weight: var(--fonts-wheigth-bold);
+          color: var(--disabled-element);
+        }
       }
     }
   }
-  div.icon2 {
+  div.desktop-sign {
     //background-color: blue;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    input.sing-button {
-      border: none;
-      width: 60px;
-      height: 35px;
-      color: var(--button-color);
-      font-size: 14px;
+    align-items: flex-end;
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--disabled-element);
+    border-radius: 6px;
+    margin: 0px;
+
+    ul {
+      list-style: none;
+      //text-align: end;
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        text-align: end;
+        margin-left: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--disabled-element);
+        a {
+          text-decoration: none;
+          color: var(--disabled-element);
+          font-family: var(--fonts);
+        }
+        .sign-out {
+          color: var(--button-color);
+          font-family: var(--fonts);
+          padding-top: 20px;
+          border-top: 1px solid var(--disabled-element);
+        }
+      }
     }
   }
+
   div.icon3 {
     //background-color: blue;
     img {

@@ -19,18 +19,15 @@ body {
 }
 
 body main.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (240)[atuo-fill];
+      grid-template-columns: repeat(atuo-fill, 240);
+  gap: 26px;
 }
 
-body main.container .search {
+body main.container section.search {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +35,7 @@ body main.container .search {
   margin-bottom: 44px;
 }
 
-body main.container .search .search_products {
+body main.container section.search .search_products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +44,7 @@ body main.container .search .search_products {
           align-items: center;
 }
 
-body main.container .search .search_products .search-box {
+body main.container section.search .search_products .search-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,18 +59,18 @@ body main.container .search .search_products .search-box {
   padding: 2px 10px;
 }
 
-body main.container .search .search_products .search-box label {
+body main.container section.search .search_products .search-box label {
   margin-bottom: 4px;
   font-size: 1rem;
   font-weight: var(--fonts-wheigth-bold);
 }
 
-body main.container .search .search_products .search-box label img {
+body main.container section.search .search_products .search-box label img {
   width: 25px;
   height: 25px;
 }
 
-body main.container .search .search_products .search-box input {
+body main.container section.search .search_products .search-box input {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   height: 32px;
@@ -82,7 +79,7 @@ body main.container .search .search_products .search-box input {
   width: 340px;
 }
 
-body main.container .search .filter_products {
+body main.container section.search .filter_products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,12 +92,12 @@ body main.container .search .filter_products {
   margin-left: 20px;
 }
 
-body main.container .search .filter_products div {
+body main.container section.search .filter_products div {
   font-family: var(--fonts);
   font-weight: var(--fonts-wheigth-bold);
 }
 
-body main.container .search .filter_products select {
+body main.container section.search .filter_products select {
   border: none;
   font-size: 18px;
   font-family: var(--fonts);
@@ -108,7 +105,7 @@ body main.container .search .filter_products select {
   color: var(--disabled-element);
 }
 
-body main.container .search .filter_products select option {
+body main.container section.search .filter_products select option {
   text-decoration: none;
 }
 
@@ -120,16 +117,18 @@ body main.container section.Grillas_products {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main.container section.Grillas_products div.card-product {
-  width: 220px;
-  height: 300px;
+  width: 240px;
+  height: 280px;
   margin-right: 20px;
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 25px;
 }
 
@@ -142,9 +141,14 @@ body main.container section.Grillas_products div.card-product div.card-product-f
           justify-content: space-between;
 }
 
+body main.container section.Grillas_products div.card-product div.card-product-footer div.card-product-price {
+  margin-left: 4px;
+}
+
 body main.container section.Grillas_products div.card-product div.card-product-footer div.card-product-price p {
   font-family: Roboto;
   font-weight: var(--fonts-wheigth-bold);
+  margin-bottom: 10px;
 }
 
 body main.container section.Grillas_products div.card-product div.card-product-footer div.card-product-price span {
@@ -158,19 +162,21 @@ body main.container section.Grillas_products div.card-product div.card-product-f
   background-color: var(--button-color);
   border-radius: 50px;
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
 }
 
 body main.container section.Grillas_products div.card-product div.card-product-footer button img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 2px;
+  margin-right: 2px;
   cursor: pointer;
 }
 
 body main.container section.Grillas_products div.card-product img {
-  width: 250px;
-  height: 210px;
+  width: 240px;
+  height: 200px;
   border-radius: 25px;
 }
 
@@ -196,5 +202,12 @@ input[type="submit"].primary-button {
   margin-top: 14px;
   margin-bottom: 30px;
   border: none;
+}
+
+@media (max-width: 640px) {
+  main.container {
+    -ms-grid-columns: (140px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 140px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
