@@ -19,7 +19,6 @@ nav div.logo div.icon img {
 }
 
 nav .menu-inicial {
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +33,10 @@ nav .menu-inicial {
 nav .menu-inicial ul {
   width: 100%;
   list-style: none;
+}
+
+nav .menu-inicial ul li {
+  display: inline-block;
 }
 
 nav .menu-inicial ul li a {
@@ -61,12 +64,6 @@ nav div.desktop-sign {
   margin: 0px;
 }
 
-nav div.desktop-sign ul li:last-child {
-  background-color: red;
-  padding-bottom: 20px;
-  border-top: 1px solid var(--disabled-element);
-}
-
 nav div.desktop-sign ul {
   list-style: none;
   padding: 0px;
@@ -75,15 +72,20 @@ nav div.desktop-sign ul {
 
 nav div.desktop-sign ul li {
   text-align: end;
-  margin-left: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--disabled-element);
+}
+
+nav div.desktop-sign ul li:last-child {
+  background-color: yellow;
+  padding-top: 20px;
+  border-top: 1px solid var(--disabled-element);
 }
 
 nav div.desktop-sign ul li a {
   text-decoration: none;
   color: var(--disabled-element);
   font-family: var(--fonts);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 nav div.desktop-sign ul li .sign-out {
@@ -95,5 +97,11 @@ nav div.icon3 img {
   width: 35px;
   height: 35px;
   margin-right: 20px;
+}
+
+@media (max-width: 640px) {
+  nav > div.menu-inicial {
+    display: none;
+  }
 }
 /*# sourceMappingURL=navegacion.css.map */

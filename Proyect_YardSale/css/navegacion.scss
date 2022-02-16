@@ -16,7 +16,7 @@ nav {
     }
   }
   .menu-inicial {
-    background-color: aqua;
+    //background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -24,6 +24,7 @@ nav {
       width: 100%;
       list-style: none;
       li {
+        display: inline-block;
         a {
           margin-right: 25px;
           text-decoration: none;
@@ -45,11 +46,6 @@ nav {
     border-radius: 6px;
     margin: 0px;
 
-    ul li:last-child {
-      background-color: red;
-      padding-bottom: 20px;
-      border-top: 1px solid var(--disabled-element);
-    }
     ul {
       list-style: none;
       //text-align: end;
@@ -58,13 +54,17 @@ nav {
 
       li {
         text-align: end;
-        margin-left: 10px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid var(--disabled-element);
+        &:last-child {
+          background-color: yellow;
+          padding-top: 20px;
+          border-top: 1px solid var(--disabled-element);
+        }
         a {
           text-decoration: none;
           color: var(--disabled-element);
           font-family: var(--fonts);
+          display: inline-block;
+          margin-bottom: 20px;
         }
         .sign-out {
           color: var(--button-color);
@@ -81,5 +81,11 @@ nav {
       height: 35px;
       margin-right: 20px;
     }
+  }
+}
+
+@media (max-width: 640px) {
+  nav > div.menu-inicial {
+    display: none;
   }
 }

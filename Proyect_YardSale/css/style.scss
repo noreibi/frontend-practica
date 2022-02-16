@@ -15,7 +15,7 @@ body {
       display: flex;
       margin-top: 40px;
       margin-bottom: 44px;
-
+      flex-wrap: wrap;
       .search_products {
         display: flex;
         align-items: center;
@@ -76,10 +76,11 @@ body {
       flex-wrap: wrap;
       //background-color: rgb(213, 210, 209);
       div.card-product {
-        width: 240px;
+        width: 230px;
         height: 280px;
         //background-color: blue;
-        margin-right: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
         overflow: hidden;
         object-fit: cover;
         border-radius: 25px;
@@ -119,7 +120,7 @@ body {
           }
         }
         img {
-          width: 240px;
+          width: 230px;
           height: 200px;
           border-radius: 25px;
         }
@@ -149,4 +150,10 @@ input[type="submit"].primary-button {
   margin-top: 14px;
   margin-bottom: 30px;
   border: none;
+}
+@media (max-width: 640px) {
+  section.search,
+  section.grillas_products {
+    justify-content: center;
+  }
 }
