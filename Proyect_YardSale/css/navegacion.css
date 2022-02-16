@@ -75,14 +75,13 @@ nav div.desktop-sign ul li {
 }
 
 nav div.desktop-sign ul li:last-child {
-  background-color: yellow;
   padding-top: 20px;
   border-top: 1px solid var(--disabled-element);
 }
 
 nav div.desktop-sign ul li a {
   text-decoration: none;
-  color: var(--disabled-element);
+  color: var(--black-text-color);
   font-family: var(--fonts);
   display: inline-block;
   margin-bottom: 20px;

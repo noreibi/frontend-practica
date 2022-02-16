@@ -48,20 +48,17 @@ nav {
 
     ul {
       list-style: none;
-      //text-align: end;
       padding: 0px;
       margin: 0px;
-
       li {
         text-align: end;
         &:last-child {
-          background-color: yellow;
           padding-top: 20px;
           border-top: 1px solid var(--disabled-element);
         }
         a {
           text-decoration: none;
-          color: var(--disabled-element);
+          color: var(--black-text-color);
           font-family: var(--fonts);
           display: inline-block;
           margin-bottom: 20px;
