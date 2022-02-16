@@ -45,6 +45,11 @@ nav {
     border-radius: 6px;
     margin: 0px;
 
+    ul li:last-child {
+      background-color: red;
+      padding-bottom: 20px;
+      border-top: 1px solid var(--disabled-element);
+    }
     ul {
       list-style: none;
       //text-align: end;
@@ -64,8 +69,6 @@ nav {
         .sign-out {
           color: var(--button-color);
           font-family: var(--fonts);
-          padding-top: 20px;
-          border-top: 1px solid var(--disabled-element);
         }
       }
     }

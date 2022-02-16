@@ -1,0 +1,64 @@
+<!-- 
+  Use Emmet shortcuts to even faster experience.
+  For an example: type div#root and press Tab.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Styles will be included here automatically -->
+    <style>
+        div.cuadrito {
+            background-color: cyan;
+            border: 1px solid yellow;
+            width: 240px;
+            height: 240px;
+            font-size: 80px;
+        }
+
+        /*div.cuadrito.grande {
+            background-color: red;
+            grid-column: span 2;
+        }*/
+
+        div.container {
+            background-color: lightblue;
+        }
+
+        /*  Flex */
+        div.container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* GRID */
+
+        /*div.container {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+            grid-auto-flow: dense;
+            grid-auto-rows: 22rem;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cuadrito">1</div>
+        <div class="cuadrito">2</div>
+        <div class="cuadrito grande">3</div>
+        <div class="cuadrito">4</div>
+        <div class="cuadrito">5</div>
+        <div class="cuadrito">6</div>
+        <div class="cuadrito">7</div>
+        <div class="cuadrito">8</div>
+        <div>
+
+            <!-- Scripts will be included here automatically with type="module" -->
+</body>
+
+</html>

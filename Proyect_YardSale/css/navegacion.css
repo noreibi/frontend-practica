@@ -61,6 +61,12 @@ nav div.desktop-sign {
   margin: 0px;
 }
 
+nav div.desktop-sign ul li:last-child {
+  background-color: red;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--disabled-element);
+}
+
 nav div.desktop-sign ul {
   list-style: none;
   padding: 0px;
@@ -83,8 +89,6 @@ nav div.desktop-sign ul li a {
 nav div.desktop-sign ul li .sign-out {
   color: var(--button-color);
   font-family: var(--fonts);
-  padding-top: 20px;
-  border-top: 1px solid var(--disabled-element);
 }
 
 nav div.icon3 img {
