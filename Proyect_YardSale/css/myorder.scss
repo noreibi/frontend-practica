@@ -13,35 +13,47 @@
     h1.title {
       font-family: var(--fonts);
       margin-bottom: 40px;
-      //font-size: var(--lg); ojo
+      font-size: var(--lg);
+      font-weight: bold;
     }
     .my-order-content {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
       background-color: var(--input-color);
-      border-radius: 20px;
-
+      border-radius: 8px;
+      margin-bottom: 24px;
+      padding: 0 24px;
       p {
-        margin-left: 15px;
-        span {
+        span:nth-child(1) {
+          display: flex;
+          flex-direction: column;
           font-family: var(--fonts);
+          font-size: var(--md);
+          font-weight: bold;
           color: var(--black-text-color);
         }
         span:nth-child(2) {
           font-family: var(--fonts);
+          font-size: var(--sm);
           color: var(--disabled-element);
         }
       }
-      p {
+      p:nth-child(2) {
         font-family: var(--fonts);
         color: var(--black-text-color);
+        text-align: end;
+        font-weight: bold;
       }
     }
     .shopping-cart {
-      background-color: red;
+      //background-color: red;
       display: grid;
       grid-template-columns: auto 1fr auto auto;
       gap: 16px;
+      margin-bottom: 12px;
+      justify-content: center;
+      align-items: center;
       figure {
         margin: 0px;
         img {
