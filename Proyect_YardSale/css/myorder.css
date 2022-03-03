@@ -84,7 +84,7 @@
   -ms-grid-columns: auto 1fr auto auto;
       grid-template-columns: auto 1fr auto auto;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
