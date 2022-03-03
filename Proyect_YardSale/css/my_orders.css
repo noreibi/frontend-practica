@@ -1,0 +1,86 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  /* comentario */
+}
+
+.my-orders {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.my-orders .my-orders-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.my-orders .my-orders-container h1.title {
+  font-family: var(--fonts);
+  margin-bottom: 40px;
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+.my-orders .my-orders-container .my-orders-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
+}
+
+.my-orders .my-orders-container .my-orders-content p span:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--fonts);
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--black-text-color);
+}
+
+.my-orders .my-orders-container .my-orders-content p span:nth-child(2) {
+  font-family: var(--fonts);
+  font-size: var(--sm);
+  color: var(--disabled-element);
+}
+
+.my-orders .my-orders-container .my-orders-content p:nth-child(2) {
+  font-family: var(--fonts);
+  color: var(--black-text-color);
+  text-align: end;
+  font-weight: bold;
+}
+
+.my-orders .my-orders-container .my-orders-content img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.my-orders .my-orders-container .my-orders-content img:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=my_orders.css.map */
