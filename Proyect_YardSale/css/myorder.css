@@ -1,0 +1,101 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  /* comentario */
+}
+
+.my-order {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.my-order .my-order-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.my-order .my-order-container h1.title {
+  font-family: var(--fonts);
+  margin-bottom: 40px;
+}
+
+.my-order .my-order-container .my-order-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--input-color);
+  border-radius: 20px;
+}
+
+.my-order .my-order-container .my-order-content p {
+  margin-left: 15px;
+}
+
+.my-order .my-order-container .my-order-content p span {
+  font-family: var(--fonts);
+  color: var(--black-text-color);
+}
+
+.my-order .my-order-container .my-order-content p span:nth-child(2) {
+  font-family: var(--fonts);
+  color: var(--disabled-element);
+}
+
+.my-order .my-order-container .my-order-content p {
+  font-family: var(--fonts);
+  color: var(--black-text-color);
+}
+
+.my-order .my-order-container .shopping-cart {
+  background-color: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto auto;
+      grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+}
+
+.my-order .my-order-container .shopping-cart figure {
+  margin: 0px;
+}
+
+.my-order .my-order-container .shopping-cart figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-order .my-order-container .shopping-cart p:nth-child(2) {
+  color: var(--disabled-element);
+  font-family: var(--fonts);
+}
+
+.my-order .my-order-container .shopping-cart p:nth-child(3) {
+  font-family: var(--fonts);
+  color: var(--black-text-color);
+  font-size: var(--md);
+  font-weight: bold;
+}
+/*# sourceMappingURL=myorder.css.map */

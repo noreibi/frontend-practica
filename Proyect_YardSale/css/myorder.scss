@@ -1,0 +1,66 @@
+@import "var";
+
+.my-order {
+  //background-color: aquamarine;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  .my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    h1.title {
+      font-family: var(--fonts);
+      margin-bottom: 40px;
+      //font-size: var(--lg); ojo
+    }
+    .my-order-content {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--input-color);
+      border-radius: 20px;
+
+      p {
+        margin-left: 15px;
+        span {
+          font-family: var(--fonts);
+          color: var(--black-text-color);
+        }
+        span:nth-child(2) {
+          font-family: var(--fonts);
+          color: var(--disabled-element);
+        }
+      }
+      p {
+        font-family: var(--fonts);
+        color: var(--black-text-color);
+      }
+    }
+    .shopping-cart {
+      background-color: red;
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      gap: 16px;
+      figure {
+        margin: 0px;
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+      }
+      p:nth-child(2) {
+        color: var(--disabled-element);
+        font-family: var(--fonts);
+      }
+      p:nth-child(3) {
+        font-family: var(--fonts);
+        color: var(--black-text-color);
+        font-size: var(--md);
+        font-weight: bold;
+      }
+    }
+  }
+}
