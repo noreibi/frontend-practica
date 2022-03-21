@@ -5,23 +5,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 160px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
     margin-top: 6px;
     margin-bottom: 38px;
     .shopping-product {
+      width: 384px;
+      //background-color: red;
       figure {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        img {
+          width: 384px;
+          height: 370px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0px 0px 25px 25px;
+          object-fit: cover;
+        }
       }
-      p {
-      }
-      h2 {
-      }
-      span {
-      }
-      input {
+      .product-view-content {
+        margin: 36px 36px 0px 36px;
+        p {
+          font-family: var(--fonts);
+          color: var(--black-text-color);
+          font-size: var(--lg);
+          font-weight: bolder;
+          margin-bottom: 0px;
+        }
+        h2 {
+          margin-top: 5px;
+        }
+        h2,
+        span {
+          color: var(--disabled-element);
+          font-family: var(--fonts);
+          font-weight: lighter;
+        }
+        input {
+        }
       }
     }
   }
