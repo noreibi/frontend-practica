@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAC;EAEJ,iBAAiB,CAAA,MAAC;EAClB,cAAc,CAAA,QAAC;EACf,kBAAkB,CAAA,QAAC;EACnB,aAAa,CAAA,QAAC;EACd,oBAAoB,CAAA,QAAC;EACrB,kBAAkB,CAAA,QAAC;EACnB,OAAO,CAAA,YAAC;EACR,qBAAqB,CAAA,IAAC;EACtB,oBAAoB,CAAA,IAAC;EACrB,IAAI,CAAA,KAAC;EACL,IAAI,CAAA,KAAC;EACL,IAAI,CAAA,KAAC;EACL,gBAAgB;CACjB",
+    "sources": [
+        "pass_recovery.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "pass_recovery.css"
+}

@@ -1,0 +1,16 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  /* comentario */
+}
+/*# sourceMappingURL=pass_recovery.css.map */
