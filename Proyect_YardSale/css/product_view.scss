@@ -10,6 +10,13 @@ body {
     .shopping-product {
       width: 384px;
       //background-color: red;
+      img {
+        width: 24px;
+        height: 24px;
+        background-color: var();
+        border-radius: 25px;
+        cursor: pointer;
+      }
       figure {
         margin-top: 0px;
         margin-left: 0px;

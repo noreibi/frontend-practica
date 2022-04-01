@@ -32,6 +32,14 @@ body .product-view-container .shopping-product {
   width: 384px;
 }
 
+body .product-view-container .shopping-product img {
+  width: 24px;
+  height: 24px;
+  background-color: var();
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 body .product-view-container .shopping-product figure {
   margin-top: 0px;
   margin-left: 0px;
