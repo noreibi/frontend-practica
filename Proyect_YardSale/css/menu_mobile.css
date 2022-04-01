@@ -14,42 +14,43 @@
   /* comentario */
 }
 
-.mobile-menu {
+body .mobile-menu {
   padding: 24px;
+  width: 360px;
 }
 
-.mobile-menu ul {
+body .mobile-menu ul {
   padding: 0px;
   margin: 24px 0 0;
   list-style: none;
 }
 
-.mobile-menu ul li {
+body .mobile-menu ul li {
   margin-bottom: 24px;
 }
 
-.mobile-menu ul li a {
+body .mobile-menu ul li a {
   text-decoration: none;
   color: var(--black-text-color);
   font-family: var(--fonts);
   font-weight: bold;
 }
 
-.mobile-menu ul li a.email {
+body .mobile-menu ul li a.email {
   font-size: var(--sm);
   font-weight: 500;
   color: var(--disabled-element);
 }
 
-.mobile-menu ul li a.sign-out {
+body .mobile-menu ul li a.sign-out {
   color: var(--button-color);
 }
 
-.mobile-menu ul:nth-child(1) {
+body .mobile-menu ul:nth-child(1) {
   border-bottom: 1px solid var(--disabled-element);
 }
 
-.mobile-menu ul:nth-child(3) {
+body .mobile-menu ul:nth-child(3) {
   position: absolute;
   bottom: 0;
 }
