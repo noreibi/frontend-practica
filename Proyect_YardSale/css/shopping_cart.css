@@ -26,7 +26,11 @@ body .my-cart {
   right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: red;
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 body .my-cart .shopping-cart-container .title-principal {
