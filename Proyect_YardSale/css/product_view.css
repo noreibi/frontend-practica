@@ -31,6 +31,7 @@ body .product-view-container {
   margin-bottom: 38px;
   position: absolute;
   right: 0;
+  padding: 24px;
 }
 
 body .product-view-container .shopping-product {
