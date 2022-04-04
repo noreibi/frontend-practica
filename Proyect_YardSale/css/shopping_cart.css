@@ -1,0 +1,138 @@
+:root {
+  --background-main: white;
+  --button-color: #acd9b2;
+  --disabled-element: #c7c7c7;
+  --input-color: #f7f7f7;
+  --general-text-color: #232830;
+  --black-text-color: #000000;
+  --fonts: "Quicksand";
+  --fonts-wheigth-light: 300;
+  --fonts-wheigth-bold: 500;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  /* comentario */
+}
+
+body {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+body .my-cart {
+  width: 360px;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: red;
+}
+
+body .my-cart .shopping-cart-container .title-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+body .my-cart .shopping-cart-container .title-principal img {
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+}
+
+body .my-cart .shopping-cart-container .title-principal img:hover {
+  cursor: pointer;
+}
+
+body .my-cart .shopping-cart-container .title-principal h1 {
+  padding-top: 2px;
+  font-size: var(--lg);
+  font-weight: bold;
+  font-family: var(--fonts);
+}
+
+body .my-cart .shopping-cart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto auto;
+      grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .my-cart .shopping-cart figure {
+  margin: 0px;
+}
+
+body .my-cart .shopping-cart figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .my-cart .shopping-cart p:nth-child(2) {
+  color: var(--disabled-element);
+  font-family: var(--fonts);
+}
+
+body .my-cart .shopping-cart p {
+  font-family: var(--fonts);
+}
+
+body .my-cart .shopping-cart img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+body .my-cart .shopping-cart img:hover {
+  cursor: pointer;
+}
+
+body .my-cart .my-order-content {
+  background-color: var(--input-color);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 0 24px;
+}
+
+body .my-cart .my-order-content p {
+  font-family: var(--fonts);
+}
+
+body .my-cart .my-order-content p span {
+  font-family: var(--fonts);
+  font-weight: bolder;
+}
+
+body .my-cart .my-order-content p {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+body .my-cart input {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=shopping_cart.css.map */
