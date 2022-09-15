@@ -14,10 +14,6 @@
   /* comentario */
 }
 
-body {
-  background-color: red;
-}
-
 body .product-view-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +25,6 @@ body .product-view-container {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 38px;
-  position: absolute;
   right: 0;
   padding: 24px;
 }

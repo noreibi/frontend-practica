@@ -1,0 +1,589 @@
+/* Colores de el sitio */
+.card {
+  padding: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card.short {
+  max-width: 600px;
+}
+
+.card a {
+  display: block;
+  max-width: 180px;
+  text-align: center;
+}
+
+.card-rose {
+  background-color: #b14b7c;
+  color: #ffc728;
+}
+
+.card-rose.right p,
+.card-rose.right h1 {
+  text-align: right;
+}
+
+.card-rose.right a {
+  margin-left: auto;
+}
+
+.button {
+  padding: 8px 16px;
+}
+
+.button-primary {
+  background-color: black;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #ffc728;
+  color: black;
+}
+
+.button-secondary-alt {
+  background-color: #b14b7c;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.button-secondary-alt:hover {
+  background-color: white;
+  color: #b14b7c;
+}
+
+/* Medidas */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.button {
+  font-size: 0.75rem;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #8c8b8b;
+  color: white;
+}
+
+nav.top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0px;
+}
+
+nav.top ul.right li:last-child {
+  background-color: #b14b7c;
+  color: #ffc728;
+}
+
+nav.top ul.right li:last-child:hover {
+  background-color: white;
+  color: #363636;
+}
+
+nav.top ul.right li:last-child:hover a {
+  background-color: white;
+  color: #363636;
+}
+
+nav.top ul li {
+  margin-left: 8px;
+  padding: 1rem 0.5rem;
+}
+
+nav.top ul li a {
+  color: white;
+}
+
+nav.top ul li a:hover {
+  color: #b14b7c;
+}
+
+nav.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+}
+
+nav.main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5rem 0px;
+}
+
+nav.main ul li {
+  margin: 0 8px;
+  padding: 1rem 0.5rem;
+}
+
+nav.main ul li a {
+  background-color: white;
+  color: #363636;
+  text-transform: uppercase;
+}
+
+nav.main ul li a:hover {
+  color: #b14b7c;
+}
+
+section.portada {
+  height: 100vh;
+}
+
+section.portada img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.portada section.inner-portada {
+  position: relative;
+  top: 50%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.portada section.inner-portada div.card.right {
+  margin-left: auto;
+}
+
+section.new-prints {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+section.new-prints div {
+  height: 260px;
+}
+
+section.circle-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.circle-category div.category {
+  margin: 8px 8px;
+  max-width: 300px;
+  width: 300px;
+  height: 300px;
+}
+
+section.circle-category div.category img {
+  border-radius: 100%;
+  position: absolute;
+  width: inherit;
+}
+
+section.circle-category div.category div {
+  border-radius: 100%;
+  width: inherit;
+  height: inherit;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+section.circle-category div.category div:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.circle-category div.category div:hover a {
+  visibility: visible;
+}
+
+section.circle-category div.category div h2 {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+section.circle-category div.category div a {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  visibility: hidden;
+}
+
+section.two-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.two-elements div,
+section.two-elements img {
+  width: 50%;
+}
+
+section.two-elements div.card-rose {
+  background-color: #b14b7c;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.about {
+  padding: 1.5rem;
+}
+
+section.about h2 {
+  text-align: center;
+  color: #33796e;
+}
+
+section.about p {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  line-height: 1.6rem;
+  font-size: 18px;
+  text-align: center;
+  color: #363636;
+}
+
+section.sign-up {
+  background-color: #b14b7c;
+  color: white;
+  padding: 1.5rem;
+}
+
+section.sign-up div {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sign-up div form {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+}
+
+section.sign-up div form .double {
+  grid-column: span 2;
+}
+
+section.sign-up div form .triple {
+  grid-column: span 3;
+}
+
+section.sign-up div form input[type="text"],
+section.sign-up div form input[type="email"],
+section.sign-up div form input[type="submit"] {
+  padding: 8px 16px;
+  border: none;
+}
+
+footer {
+  background-color: #33796e;
+  color: white;
+}
+
+footer div.inner-footer {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer div.inner-footer div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(33%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  footer div.inner-footer div {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  footer div.inner-footer div ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer div.inner-footer div p {
+    text-align: center;
+  }
+}
+
+footer div.inner-footer div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer div.inner-footer div div ul {
+  display: block;
+  list-style: none;
+}
+
+footer div.inner-footer div div img {
+  width: 177px;
+  height: 78px;
+}
+
+footer div.inner-footer div ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div.inner-footer div ul li {
+  margin-left: 12px;
+}
+
+@font-face {
+  font-family: "turbo";
+  src: url("../fonts/turbo.ttf");
+  src: url("../fonts/turbo.woff") format("woff"), url("../fonts/turbo.ttf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "turbo";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.15em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pinterest:before {
+  content: "\e906";
+}
+
+.icon-bag:before {
+  content: "\e900";
+}
+
+.icon-cart:before {
+  content: "\e901";
+}
+
+.icon-check:before {
+  content: "\e902";
+}
+
+.icon-cross:before {
+  content: "\e903";
+}
+
+.icon-down-arrow:before {
+  content: "\e904";
+}
+
+.icon-mail:before {
+  content: "\e905";
+}
+
+.icon-left-arrow:before {
+  content: "\e90a";
+}
+
+.icon-menu:before {
+  content: "\e90c";
+}
+
+.icon-minus:before {
+  content: "\e90d";
+}
+
+.icon-phone:before {
+  content: "\e90e";
+}
+
+.icon-plus:before {
+  content: "\e910";
+}
+
+.icon-right-arrow:before {
+  content: "\e911";
+  margin-right: 0;
+}
+
+.icon-search:before {
+  content: "\e913";
+}
+
+.icon-up-arrow:before {
+  content: "\e917";
+}
+
+.icon-user:before {
+  content: "\e918";
+}
+
+.icon-youtube:before {
+  content: "\e914";
+}
+
+.icon-gplus:before {
+  content: "\e907";
+}
+
+.icon-vimeo:before {
+  content: "\e912";
+}
+
+.icon-rss:before {
+  content: "\e908";
+}
+
+.icon-houzz:before {
+  content: "\e909";
+}
+
+.icon-snapchat:before {
+  content: "\e90b";
+}
+
+.icon-instagram:before {
+  content: "\e90f";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-tumblr:before {
+  content: "\eab9";
+}
+
+.icon-linkedin:before {
+  content: "\eaca";
+}
+
+.icon-twitter-share:before {
+  content: "\ea96";
+}
+
+.icon-facebook-share:before {
+  content: "\ea90";
+}
+
+.icon-gplus-share:before {
+  content: "\e907";
+}
+
+.icon-pinterest-share:before {
+  content: "\e906";
+}
+
+.icon-mail-share:before {
+  content: "\e905";
+}
+/*# sourceMappingURL=style.css.map */

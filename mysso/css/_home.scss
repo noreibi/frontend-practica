@@ -1,0 +1,225 @@
+nav.top {
+  display: flex;
+  justify-content: space-between;
+  @include terciaryAltTheme;
+  ul {
+    @include ul-flex;
+    &.right {
+      li:last-child {
+        @include secondaryTheme;
+        &:hover {
+          @include primaryTheme;
+          a {
+            @include primaryTheme;
+          }
+        }
+      }
+    }
+    li {
+      margin-left: 8px;
+      @include terciaryAltThemeLink;
+      padding: 1rem 0.5rem;
+    }
+  }
+}
+
+nav.main {
+  display: grid;
+  grid-template-columns: 200px auto;
+  place-items: center;
+  font-family: $secondaryFont, $standardFont;
+  font-size: 0.875rem;
+  ul {
+    @include ul-flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0px;
+    li {
+      margin: 0 8px;
+      padding: 1rem 0.5rem;
+      a {
+        @include primaryTheme;
+        text-transform: uppercase;
+        &:hover {
+          color: $backgroundSecondary;
+        }
+      }
+    }
+  }
+}
+
+section.portada {
+  height: 100vh;
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  section.inner-portada {
+    position: relative;
+    top: 50%;
+    @include max-width-body;
+    div.card {
+      &.right {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+section.new-prints {
+  @include max-width-body;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  div {
+    height: 260px;
+  }
+}
+section.circle-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div.category {
+    margin: 8px 8px;
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+
+    img {
+      @include circle-div;
+      position: absolute;
+      width: inherit;
+    }
+    div {
+      @include circle-div;
+      width: inherit;
+      height: inherit;
+      margin: 0px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      transition: background-color 0.5s;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        a {
+          visibility: visible;
+        }
+      }
+
+      h2 {
+        margin-top: 100px;
+        margin-bottom: 0px;
+      }
+      a {
+        align-self: start;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+section.two-elements {
+  display: flex;
+  div,
+  img {
+    width: 50%;
+  }
+
+  div.card-rose {
+    @include secondaryAltTheme;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+section.about {
+  padding: 1.5rem;
+  h2 {
+    text-align: center;
+    color: $backgroundTerciary;
+  }
+  p {
+    @include max-width-body;
+    font-weight: 700;
+    line-height: 1.6rem;
+    font-size: 18px;
+    text-align: center;
+    color: #363636;
+  }
+}
+
+section.sign-up {
+  @include secondaryAltTheme;
+  padding: 1.5rem;
+  div {
+    @include max-width-body;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 25% 25% 25% 25%;
+      .double {
+        grid-column: span 2;
+      }
+      .triple {
+        grid-column: span 3;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="submit"] {
+        padding: 8px 16px;
+        border: none;
+      }
+    }
+  }
+}
+
+footer {
+  @include terciaryTheme;
+  div.inner-footer {
+    @include max-width-body;
+    div {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+      align-items: center;
+      @media (max-width: 800px) {
+        grid-template-columns: unset;
+        ul {
+          justify-content: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      div {
+        display: flex;
+        align-items: top;
+        flex-direction: column;
+        flex: 1;
+
+        ul {
+          display: block;
+          list-style: none;
+        }
+        img {
+          width: 177px;
+          height: 78px;
+        }
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

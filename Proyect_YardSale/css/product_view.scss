@@ -1,14 +1,11 @@
 @import "var";
 
 body {
-  background-color: red;
-
   .product-view-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 38px;
-    position: absolute;
     right: 0;
     //width: 360px;
     padding: 24px;

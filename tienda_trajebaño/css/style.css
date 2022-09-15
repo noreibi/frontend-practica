@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 body .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +15,7 @@ body .menu .icon {
   width: 120px;
   height: 60px;
   font-size: 3rem;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   color: #8c8b8b;
   letter-spacing: 2px;
@@ -295,59 +299,56 @@ body .section .descripcion .redes_sociales div:hover {
 body .section .descripcion .redes_sociales div.facebook img {
   width: 40px;
   height: 40px;
-  content: url("icons redes/facebook-empty.png");
+  content: url("../icons redes/facebook-empty.png");
   -webkit-transition: background-color 3000ms linear;
   transition: background-color 3000ms linear;
 }
 
 body .section .descripcion .redes_sociales div.facebook img:hover {
-  content: url("icons redes/faceboock-full.png");
+  content: url("../icons redes/faceboock-full.png");
 }
 
 body .section .descripcion .redes_sociales div.instagram img {
   width: 40px;
   height: 40px;
-  content: url("icons redes/instagram-empty.png");
+  content: url("../icons redes/instagram-empty.png");
 }
 
 body .section .descripcion .redes_sociales div.instagram img:hover {
-  content: url("icons redes/instagram-full.png");
+  content: url("../icons redes/instagram-full.png");
 }
 
 body .section .descripcion .redes_sociales div.twitter img {
   width: 40px;
   height: 40px;
-  content: url("icons redes/twitter-empty.png");
+  content: url("../icons redes/twitter-empty.png");
 }
 
 body .section .descripcion .redes_sociales div.twitter img:hover {
-  content: url("icons redes/twitter-full.png");
+  content: url("../icons redes/twitter-full.png");
 }
 
 body .section .descripcion .redes_sociales div.google img {
   width: 40px;
   height: 40px;
-  content: url("icons redes/google-empty.png");
+  content: url("../icons redes/google-empty.png");
 }
 
 body .section .descripcion .redes_sociales div.google img:hover {
-  content: url("icons redes/google-full.png");
+  content: url("../icons redes/google-full.png");
 }
 
 body .section .descripcion .redes_sociales div.gmail img {
   width: 40px;
   height: 40px;
-  content: url("icons redes//gmail-empty.png");
+  content: url("../icons redes//gmail-empty.png");
 }
 
 body .section .descripcion .redes_sociales div.gmail img:hover {
-  content: url("icons redes/gmail-full.png");
+  content: url("../icons redes/gmail-full.png");
 }
 
 body footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -355,34 +356,38 @@ body footer {
       -ms-flex-align: center;
           align-items: center;
   background-color: #3a897d;
-  margin-top: 200px;
+  /*****/
+  /****/
 }
 
 body footer .footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 372px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /*display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 372px;*/
 }
 
 body footer .footer-menu div.icon2 {
   font-size: 3rem;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   color: #bdbcbc;
   letter-spacing: 2px;
   padding-bottom: 70px;
+  text-align: center;
 }
 
 body footer .footer-menu ul {
   list-style: none;
   line-height: 25px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body footer .footer-menu ul li h2 {
@@ -407,7 +412,8 @@ body footer .footer-menu ul li a:hover {
 }
 
 body footer .footer-menu ul.flag {
-  margin-top: -80px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body footer .footer-menu ul.flag h2 {
@@ -424,5 +430,50 @@ body footer .footer-menu ul.flag p {
   color: #fff;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body footer .redes-sociales {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+body footer .redes-sociales div {
+  width: 50px;
+  height: 50px;
+  background-color: #ede319;
+  margin: 2px;
+}
+
+body footer .info-pagos {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body footer .info-pagos p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body footer .info-pagos .pagos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+body footer .info-pagos .pagos div {
+  width: 42px;
+  height: 26px;
+  background-color: #ede319;
+  margin: 2px;
 }
 /*# sourceMappingURL=style.css.map */

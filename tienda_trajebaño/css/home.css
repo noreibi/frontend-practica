@@ -1,0 +1,448 @@
+body {
+  margin-top: 0px;
+  /*footer {
+    margin-top: 0px;
+    div {
+      border: 1px solid red;
+      margin: 4px;
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(173, 168, 168);
+      }
+
+      ul {
+        h3 {
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+        }
+        li {
+          list-style: none;
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+        }
+      }
+    }
+
+  }*/
+}
+
+body .menu-cabecera {
+  background-color: darkgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .menu-cabecera .nav-menu-cabecera ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .menu-cabecera .nav-menu-cabecera ul li {
+  list-style: none;
+}
+
+body .menu-cabecera .nav-menu-cabecera ul li a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+body .menu-cabecera .nav-menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .menu-cabecera .nav-menu-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+body .menu-cabecera .nav-menu-right ul li {
+  list-style: none;
+  padding: 16px;
+}
+
+body .menu-cabecera .nav-menu-right ul li.car-purple {
+  background-color: purple;
+  height: 24px;
+}
+
+body .menu-cabecera .nav-menu-right ul li a {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .menu-cabecera .nav-menu-right ul li img {
+  margin-right: 10px;
+}
+
+body .menu {
+  margin-bottom: 25px;
+}
+
+body .galery-post {
+  width: 100%;
+  height: 100vh;
+}
+
+body .galery-post div.card-rosa {
+  background-color: #b14b7c;
+  max-width: 460px;
+  padding: 30px;
+  position: relative;
+  top: 50%;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+body .galery-post div.card-rosa.card-rosa2 {
+  margin-right: auto;
+  margin-left: 25%;
+}
+
+body .galery-post div.card-rosa.card-rosa2 h1 {
+  text-align: left;
+}
+
+body .galery-post div.card-rosa.card-rosa2 a.button {
+  margin-left: unset;
+  background-color: black;
+  color: white;
+}
+
+body .galery-post div.card-rosa h1 {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+
+body .galery-post div.card-rosa h2 {
+  font-size: 1rem;
+}
+
+body .galery-post div.card-rosa h1,
+body .galery-post div.card-rosa h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(251, 209, 41, 0.861);
+  text-align: right;
+}
+
+body .galery-post div.card-rosa a.button {
+  color: rgba(74, 74, 73, 0.861);
+  background-color: rgba(251, 209, 41, 0.861);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  display: block;
+  padding-top: 16px;
+  padding-left: 12px;
+  margin-left: auto;
+  height: 30px;
+  width: 145px;
+}
+
+body .galery-post img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+body .circle-imagen {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-grid-columns: (600px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 600px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .circle-imagen div {
+  position: relative;
+}
+
+body .circle-imagen div .circle-text {
+  position: absolute;
+  border-radius: 100%;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+}
+
+body .circle-imagen div .circle-text:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body .circle-imagen div .circle-text h1 {
+  text-align: center;
+  margin-top: 40%;
+}
+
+body .circle-imagen div .circle-text hr {
+  width: 30%;
+}
+
+body .circle-imagen div .circle-text button {
+  background-color: black;
+  border: none;
+  color: white;
+  width: 25%;
+  height: 10%;
+}
+
+body .circle-imagen div img {
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+}
+
+body .galery-fotos {
+  background-color: #5b68f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .galery-fotos img {
+  width: 50%;
+}
+
+body .about-text {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+body .about-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: #4f898b;
+}
+
+body .about-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+body .grid-content {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  body .grid-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .grid-content div {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #b14b7c;
+  /*width: 500px;
+      height: 500px;*/
+}
+
+@media (max-width: 480px) {
+  body .grid-content div {
+    width: 100%;
+  }
+}
+
+body .grid-content div.content-info {
+  padding: 32px;
+}
+
+body .grid-content div.content-info h1 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin-top: 42%;
+  color: white;
+}
+
+body .grid-content div.content-info p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 1 rem;
+  color: white;
+  font-weight: lighter;
+}
+
+body .grid-content div.content-info button {
+  float: right;
+  margin-left: auto;
+  background-color: #b14b7c;
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  height: 10%;
+}
+
+body .grid-content div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .new-prints {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body .new-prints .titulo-prints {
+  font-size: 1rem;
+  color: #4f898b;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body .new-prints div.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+body .new-prints div.row-flex img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .new-prints div.row-flex .circle-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  position: absolute;
+  border-radius: 100%;
+  width: 450px;
+  height: 450px;
+}
+
+body .new-prints div.row-flex .circle-post:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body .new-prints div.row-flex .circle-post h1 {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .new-prints div.row-flex .circle-post hr {
+  width: 30%;
+}
+
+body .card-discount {
+  background-color: #b14b7c;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+body .card-discount h1 {
+  margin-top: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body .card-discount p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+body .card-discount form {
+  margin-bottom: 12px;
+}
+
+body .card-discount form div input {
+  width: 220px;
+  height: 40px;
+  border: none;
+  margin-bottom: 16px;
+  margin-right: 6px;
+}
+
+body .card-discount form div button {
+  margin-left: unset;
+  background-color: black;
+  color: white;
+  height: 44px;
+  width: 145px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=home.css.map */
